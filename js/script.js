@@ -1,5 +1,27 @@
 $(document).ready(function(){
 
+    // NAVIGATION DRAWER
+
+    var navigationDrawerOpen = $('.drawerOpen');
+    var navigationDrawerClose = $('.drawerClose');
+    var navigationDrawer = $('.drawer');
+
+    navigationDrawerClose.click(function() {
+      toggleDrawer(-40);
+    });
+
+    navigationDrawerOpen.click(function() {
+      toggleDrawer(0);
+    });
+
+    function toggleDrawer(value) {
+      navigationDrawer.animate({left : value + 'vw'}, {
+        duration : 500
+      });
+    }
+
+    // CAROUSEL
+
     var duration = 500;
     var delay = 2000;
     var shift = 0;
