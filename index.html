@@ -4,25 +4,44 @@
     <meta charset="utf-8">
     <title>Jquery Carrousel</title>
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
-
-    <div class="container">
-        <div class="carrousel">
-            <div class="controllers">
-                <i class="fas fa-chevron-left controllerLeft"></i>
-                <i class="fas fa-chevron-right controllerRight"></i>
-            </div>
-            <ul class="slider">
-                <li class="slide"><img src="./img/landscape1.jpg"></li>
-                <li class="slide"><img src="./img/landscape2.jpg"></li>
-                <li class="slide"><img src="./img/landscape3.jpg"></li>
-                <li class="slide"><img src="./img/landscape4.jpg"></li>
+    
+    <nav>
+        <div class="container">
+            <ul class="menu">
+                <li><i class="fas fa-bars drawerOpen"></i></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Art</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Freebies</a></li>
+            </ul>
+            <ul class="drawer">
+                <li><a href="#" class="fas fa-times drawerClose"></a></li>
+                <li><a href="#">Link1</a></li>
+                <li><a href="#">Link2</a></li>
+                <li><a href="#">Link3</a></li>
+                <li><a href="#">Link4</a></li>
             </ul>
         </div>
+    </nav>
+
+    <div class="carrousel">
+        <div class="controllers">
+            <i class="fas fa-chevron-left controllerLeft"></i>
+            <i class="fas fa-chevron-right controllerRight"></i>
+        </div>
+        <ul class="slider">
+            <li class="slide"><img src="./img/landscape1.jpg"></li>
+            <li class="slide"><img src="./img/landscape2.jpg"></li>
+            <li class="slide"><img src="./img/landscape3.jpg"></li>
+            <li class="slide"><img src="./img/landscape4.jpg"></li>
+        </ul>
     </div>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/script.js"></script>
