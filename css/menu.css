@@ -9,11 +9,16 @@ nav {
     background-color: #303435;
 }
 
+nav .menuWraper {
+  display: flex;
+}
+
 nav .menu {
     height: 100%;
     list-style-type: none;
-    display: flex;
+    display: none;
     flex-flow: row nowrap;
+    flex-grow: 1;
     justify-content: space-evenly;
     align-items: stretch;
     font-size: 20px;
@@ -37,4 +42,25 @@ nav .menu li * {
 
 nav .menu li a:hover {
     border-bottom: 2px white solid;
+}
+
+.drawerOpen {
+  height: 100%;
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px transparent solid;
+  padding: 0 50px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 700px) {
+  .drawerOpen {
+    display: none;
+  }
+  nav .menu {
+    display: flex;
+  }
 }

@@ -6,7 +6,7 @@ nav .drawer {
     justify-content: flex-start;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -40vw;
     z-index: 300;
     background-color: #4c4c4c;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
@@ -39,7 +39,7 @@ nav .drawer li:first-child a {
 }
 
 
-nav .drawer li a:hover { 
+nav .drawer li a:hover {
     border-left: 2px white solid;
 }
 
